@@ -1,0 +1,9 @@
+include ../user/user
+
+mixin users(data)
+    +b.users()&attributes(attributes)
+        +e.UL.list
+            each item in data.items
+                +e.item
+                    +user(item)
+

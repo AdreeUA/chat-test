@@ -1,0 +1,28 @@
+.chat-input {
+    width: 100%;
+    height: 100px;
+
+    &__area {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+
+        resize: none;
+
+        border: none;
+        border-top: 1px solid #ccc;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__placeholder {
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+
+        font-size: 11px;
+        color: #999;
+    }
+}

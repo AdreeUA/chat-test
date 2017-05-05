@@ -1,0 +1,8 @@
+extends ../layouts/default
+include ../components/chat/chat
+
+block vars
+    -pageSettings.title = 'Главная';
+
+block content
+    +chat.__chat

@@ -1,0 +1,14 @@
+include ../users/users
+include ../messages/messages
+include ../chat-input/chat-input
+
+mixin chat(data)
+    +b.chat()&attributes(attributes)
+        +e.P.header Simple chat
+        +e.container
+            +e.left
+                +users(users.defaults)
+            +e.right
+                +messages(messages.defaults).__messages
+                +chat-input.__input
+

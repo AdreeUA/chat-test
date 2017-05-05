@@ -1,0 +1,16 @@
+include ../badges/badges
+
+mixin user(data)
+    +b.user(class=(data.active ? '_active' : ''))&attributes(attributes)
+
+        +e.aside
+            +e.IMG.avatar(src=`%=static=%img/assets/users/${data.avatar}`)
+        +e.content
+            +e.time= data.date
+            +e.top
+                if data.self
+                    +e.SPAN.name_self Я:
+                +e.SPAN.name= data.name
+                if data.count
+                    +badges().__badge= '+' + data.count
+            +e.message(class=(data.isWrite === true ? '_isWrite' : ''))= data.message

@@ -1,0 +1,22 @@
+include ../../node_modules/bemto.pug/bemto
+
+include ../components/header/header
+include ../components/footer/footer
+
+-const pageSettings = {}
+-pageSettings.title = '';
+-pageSettings.useSocialMetaTags = false;
+
+-const jv0 = 'javascript:void(0)';
+
+block vars
+
+doctype html
+html(lang='ru')
+    include ../components/head/head
+
+    +b.BODY.page
+        +e.container
+            block content
+
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

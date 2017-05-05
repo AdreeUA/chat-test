@@ -1,0 +1,17 @@
+.message {
+    @include clearfix();
+
+    direction: rtl;
+
+    &_self {
+        direction: ltr;
+    }
+
+    &__time,
+    &__text {
+        display: inline-block;
+        vertical-align: middle;
+
+        direction: ltr;
+    }
+}

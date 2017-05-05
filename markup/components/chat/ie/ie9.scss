@@ -1,0 +1,25 @@
+.chat {
+
+    &__container {
+        display: table;
+        border-collapse:collapse;
+        width: 100%;
+    }
+
+    &__left,
+    &__right {
+        display: table-cell;
+        vertical-align: top;
+        height: $chat-height + px;
+        border: 1px solid #cccccc;
+    }
+
+    &__right {
+        border: 1px solid #cccccc;
+    }
+
+    &__input {
+        bottom: 2px;
+    }
+
+}

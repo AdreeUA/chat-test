@@ -1,0 +1,4 @@
+mixin message(data)
+    +b.message(class=(data.self ? '_self' : ''))&attributes(attributes)
+        +e.text= data.message
+        +e.time= data.time

@@ -1,0 +1,15 @@
+.page {
+
+    &__container {
+        display: table;
+        border-collapse:collapse;
+        width: $chat-width + px;
+        margin: 0 auto;
+    }
+
+    &__chat {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+}

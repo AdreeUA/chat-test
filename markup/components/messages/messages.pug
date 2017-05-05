@@ -1,0 +1,22 @@
+include ../message/message
+
+mixin messages(data)
+    +b.messages()&attributes(attributes)
+
+        each session in data
+            +e.session
+                +e.date-wrap
+                    +e.date= session.date
+                +e.items
+                    each item in session.list
+                        +message(item).__item
+
+        each session in data
+            +e.session
+                +e.date-wrap
+                    +e.date= session.date
+                +e.items
+                    each item in session.list
+                        +message(item).__item
+
+

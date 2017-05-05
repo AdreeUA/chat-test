@@ -1,0 +1,52 @@
+.chat {
+    width: $chat-width + px;
+    height: $chat-height + px;
+
+    overflow: hidden;
+
+    box-shadow: 1px 1px 3px #aaa;
+
+    &__container {
+        display: flex;
+        height: ($chat-height - 47.5) + px;
+    }
+
+    &__header {
+        padding: 15px;
+        margin: 0;
+
+        font-size: 14px;
+        font-weight: 600;
+
+        color: $white;
+
+
+        background-color: $black;
+    }
+
+    &__left {
+        width: percentage(350/$chat-width);
+    }
+
+    &__right {
+        position: relative;
+
+        width: percentage(610/$chat-width);
+        padding-bottom: 100px;
+
+        background-color: $ultra-light-grey;
+    }
+
+    &__messages {
+        height: 100%;
+
+        overflow-x: auto;
+    }
+
+    &__input {
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+    }
+
+}
