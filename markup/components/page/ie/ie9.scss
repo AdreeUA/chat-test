@@ -2,13 +2,15 @@
 
     &__container {
         display: table;
-        border-collapse:collapse;
         width: $chat-width + px;
         margin: 0 auto;
+
+        border-collapse:collapse;
     }
 
     &__chat {
         display: table-cell;
+
         vertical-align: middle;
     }
 

@@ -2,15 +2,18 @@
 
     &__container {
         display: table;
-        border-collapse:collapse;
         width: 100%;
+
+        border-collapse:collapse;
     }
 
     &__left,
     &__right {
         display: table-cell;
-        vertical-align: top;
         height: $chat-height + px;
+
+        vertical-align: top;
+
         border: 1px solid #cccccc;
     }
 

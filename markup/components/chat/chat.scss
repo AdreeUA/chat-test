@@ -26,12 +26,14 @@
 
     &__left {
         width: percentage(350/$chat-width);
+        height: 100%;
     }
 
     &__right {
         position: relative;
 
         width: percentage(610/$chat-width);
+        height: 100%;
         padding-bottom: 100px;
 
         background-color: $ultra-light-grey;
